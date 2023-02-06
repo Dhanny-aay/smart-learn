@@ -7,6 +7,7 @@ import ilus from './ilus.png';
 import courses from './courses.png';
 import go from './go.png';
 import play from './play.png';
+import dots from './3dots.png';
 
 const home = () => {
     return ( 
@@ -88,6 +89,49 @@ const home = () => {
                                 <option value="nil">No Courses</option>
                             </select>
                         </span>
+
+                        <div className=' mt-3 w-full bg-[#f1f1f1] py-7  rounded-[15px] flex flex-col space-y-[35px]'>
+                            <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3'>
+                                <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#ffcf2d]'></span>
+                                <span className=' flex flex-col font-bold font-sans text-[12px]'>
+                                    <p classname=' font-bold font-sans text-[12px]'>Web Design</p>
+                                    <p classname=' font-medium font-sans text-[10px]'>20+ Courses</p>
+                                </span>
+                                <button className=' px-4 py-2 bg-[#ffcf2d] font-sans font-medium text-xs bg-opacity-20 text-center  rounded-[20px]'>View Course</button>
+                                <img src={ dots } className='' alt="" />
+                            </div>
+
+                            <div className=' flex items-center justify-between'>
+                                <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#2708a0]'></span>
+                                <span className=' flex flex-col font-bold font-sans text-[12px]'>
+                                    <p classname=' font-bold font-sans text-[12px]'>UI/UX Design</p>
+                                    <p classname=' font-medium font-sans text-[10px]'>30+ Courses</p>
+                                </span>
+                                <button className=' px-4 py-2 bg-[#2708a0] font-sans font-medium text-xs bg-opacity-20 text-center  rounded-[20px]'>View Course</button>
+                                <img src={ dots } className='' alt="" />
+                            </div>
+
+                            <div className=' flex items-center justify-between'>
+                                <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#fe5244]'></span>
+                                <span className=' flex flex-col font-bold font-sans text-[12px]'>
+                                    <p classname=' font-bold font-sans text-[12px]'>Web Design</p>
+                                    <p classname=' font-medium font-sans text-[10px]'>40+ Courses</p>
+                                </span>
+                                <button className=' px-4 py-2 bg-[#fe5244] font-sans font-medium text-xs bg-opacity-20 text-center  rounded-[20px]'>View Course</button>
+                                <img src={ dots } className='' alt="" />
+                            </div>
+
+                            <div className=' flex items-center justify-between'>
+                                <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#3fb1b5]'></span>
+                                <span className=' flex flex-col font-bold font-sans text-[12px]'>
+                                    <p classname=' font-bold font-sans text-[12px]'>UI/UX Design</p>
+                                    <p classname=' font-medium font-sans text-[10px]'>80+ Courses</p>
+                                </span>
+                                <button className=' px-4 py-2 bg-[#3fb1b5] font-sans font-medium text-xs bg-opacity-20 text-center  rounded-[20px]'>View Course</button>
+                                <img src={ dots } className='' alt="" />
+                            </div>
+
+                        </div>
 
                     </div>
 
