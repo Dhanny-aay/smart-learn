@@ -4,6 +4,7 @@ import eli from './Eli.png';
 import edu from './edu.png';
 import per from './per.png';
 import ilus from './ilus.png';
+import ilusii from './illus2.png';
 import courses from './courses.png';
 import go from './go.png';
 import play from './play.png';
@@ -12,11 +13,50 @@ import insi from './ins1.png';
 import insii from './ins2.png';
 import insiii from './ins3.png';
 import insiv from './ins4.png';
+import bio from './bio.png';
+import chat from './chat.png';
+import col from './col.png';
+import logotab from './logotab.png';
+import marks from './marks.png';
+import menutab from './menutab.png';
+import set from './set.png';
+import mail from './mail.png';
+import noti from './noti.png';
 
 const home = () => {
     return ( 
+        
         <div className="">
-            <div className=" navbar py-6 flex justify-between px-4 bg-white">
+                <div className='bg-[#f1f1f1] hidden z-50 md:block fixed md:w-[85px] h-full left-0 top-0 px-5 pt-14'>
+                    <div className=' flex flex-col items-center '>
+                        <span className=''>
+                            <img src={ logotab } className='' alt="" />
+                        </span>
+                        <span className=' flex flex-col items-center mt-14 space-y-8'>
+                            <button className=' p-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ menutab } className='' alt="" />
+                            </button>
+                            <button className=' p-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ marks } className='' alt="" />
+                            </button>
+                            <button className=' p-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ bio } className='' alt="" />
+                            </button>
+                            <button className=' p-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ col } className='' alt="" />
+                            </button>
+                            <button className=' p-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ chat } className='' alt="" />
+                            </button>
+                            <button className=' md:absolute bottom-4 border-t border-[#160e4d] py-5 px-3 hover:bg-white hover:rounded-[10px] hover:shadow transition-all'>
+                                <img src={ set } className='' alt="" />
+                            </button>
+
+                        </span>
+                    </div>     
+
+                </div>
+            <div className=" navbar py-6 flex justify-between px-4 md:pr-8 md:ml-[110px] md:hidden bg-white">
                 <span className=" flex justify-center items-center space-x-1">
                     <img src={ logo } className='' alt="" />
                     <p className=" font-sans font-semibold text-[20px] text-[#160e4d]">Smart Learning</p>
@@ -24,21 +64,34 @@ const home = () => {
                 <img src={ menu } className='' alt="" />
             </div>
 
-            <div className=' mt-4 px-4 flex justify-between'>
+            <div className=' mt-4 px-4 flex justify-between items-center md:pr-8 md:ml-[110px] md:mt-[40px]'>
                 <input type="search" name="" className=' font-sans h-[40px] text-[rgba(22,14,77,0.5)] px-5 py-2 bg-[#f1f1f1] rounded-[22px]' placeholder='Search for Query' id="" />
+
+                <span className='hidden md:flex flex-row items-center space-x-8'>
+                    <img src={ mail } className='' alt="" />
+                    <img src={ noti } className='' alt="" />
+                </span>
+
+                <span className='hidden md:flex flex-row p-3 space-x-2 bg-white rounded-[20px] shadow-md'>
+                    <img src={ eli } className='' alt="" />
+                    <span className=' flex-col flex'>
+                        <p className=' text-sm'>VEEk</p>
+                        <p className=' text-[10px]'>@veekdesign</p>
+                    </span>
+                </span>
 
             </div>
 
-            <div className=' mt-[30px] px-5 '>
+            <div className=' mt-[30px] px-5 md:pr-8 md:ml-[110px]'>
                 <div>
                     <p className=' font-sans font-medium text-[20px] text-[#160e4d]'>Analytics Overview</p>
-                    <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] relative flex'>
-                        <div className=' z-50'>
-                            <p className='text-white font-semibold text-[18px] '>Learn Effectively<br></br>With Us!</p>
-                            <p className='font font-light text-white font-sans text-[10px]'>Get 30% Off every courses in January.</p>
-                            <div className=''>
+                    <div className=' w-full rounded-[22px] md:h-[300px] mt-4 px-5 md:px-11 py-6 md:py-10 bg-[#2708a0] relative flex'>
+                        <div className=' z-10'>
+                            <p className='text-white font-semibold text-[18px] w-[150px] md:w-full  md:text-[30px]'>Learn Effectively With Us!</p>
+                            <p className='font font-light text-white font-sans text-[10px] md:text-[13px]'>Get 30% Off every courses in January.</p>
+                            <div className=' md:flex md:flex-row md:space-x-8 md:mt-12'>
                                 <div className=' flex mt-[11px] space-x-2'>
-                                    <img src={ edu } alt="" />
+                                    <img src={ edu } className='' alt="" />
                                     <span className=''>
                                         <p className=' text-white font-light text-[10px] font-sans'>Students</p>
                                         <p className=' text-white font-light text-[10px] font-sans'>50,000+</p>
@@ -54,14 +107,15 @@ const home = () => {
                                 </div>
                             </div>
                         </div>
-                        <img src={ ilus } className=' bottom-0 right-0 absolute w-[60%] mb-0 pb-0' alt="" />
+                        <img src={ ilus } className=' bottom-0 md:hidden right-0 absolute w-[60%] mb-0 pb-0' alt="" />
+                        <img src={ ilusii } className=' hidden md:block bottom-0 right-0 absolute w-[60%] mb-0 pb-0' alt="" />
                     </div>
                 </div>
                 
             </div>
 
-            <div className=' mt-[22px] px-5'>
-                <div className=' flex-col'>
+            <div className=' mt-[22px] px-5 md:pr-8 md:ml-[110px]'>
+                <div className='flex flex-col'>
                     <div>
                         <p className=' font-sans font-medium text-[20px] text-[#160e4d]'>Current Activity</p>
                         <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] h-[185px]'>
