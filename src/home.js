@@ -126,9 +126,9 @@ const home = () => {
                 
             </div>
 
-            <div className=' mt-[22px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] lg:flex lg:flex-row'>
-                <div className='flex flex-col lg:flex-row'>
-                    <div>
+            <div className=' mt-[22px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] lg:flex lg:flex-row justify-between'>
+
+                    <div className=''>
                         <p className=' font-sans font-medium text-[20px] text-[#160e4d]'>Current Activity</p>
                         <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] h-[185px]'>
                             <p className=' text-white font-semibold text-[18px]'>Monthly Progress</p>
@@ -148,9 +148,10 @@ const home = () => {
                                 <p className=' font-sans font-medium text-[10px] text-white'>Video Courses</p>
                                 <img src={ play } className=' absolute right-3 bottom-2' alt="" />
                             </div>
+                        </div>    
                     </div>
 
-                    <div className=' mt-6'>
+                    <div className=' mt-6 lg:mt-0'>
                         <span className=' flex justify-between'>
                             <p className='font-sans font-medium text-[20px] text-[#160e4d]'>Popular Courses</p>
                             <select name="courses" className=' border border-[#160e4d] text-[#160e4d] font-sans font-normal text-[10px] text-center rounded-[20px]' id="">
@@ -203,9 +204,8 @@ const home = () => {
 
                         </div>
                     </div>
-                </div>
 
-                <div className=' mt-5'>
+                <div className=' mt-5 lg:mt-0'>
                     <span className=' flex flex-row justify-between'>
                         <p className=' font-sans font-medium text-[18px] text-[#160e4d]'>Best Instructors</p>
                         <p className=' font-sans font-normal text-[14px] underline text-[#160e4d]'>See All</p>
@@ -259,7 +259,6 @@ const home = () => {
 
             </div>
 
-            </div>
         </div>
      );
 }
