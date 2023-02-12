@@ -24,6 +24,8 @@ import set from './set.png';
 import mail from './mail.png';
 import noti from './noti.png';
 import trate from './trate.png';
+import Graph from './graph';
+
 
 const home = () => {
     return ( 
@@ -132,9 +134,10 @@ const home = () => {
 
                     <div className=' lg:w-[30%] lg:h-[350px]'>
                         <p className=' font-poppins font-medium text-[20px] text-[#160e4d]'>Current Activity</p>
-                        <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] shadow h-[185px]'>
+                        <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] shadow '>
                             <p className=' text-white font-semibold text-[18px]'>Monthly Progress</p>
                             <p className=' font-poppins font-medium text-white text-[10px]'>These are the latest improvements</p>
+                            <Graph />
                         </div>
 
                         <div className=' mt-6 flex justify-between'>
@@ -145,7 +148,7 @@ const home = () => {
                                 <img src={ go } className=' absolute right-3 bottom-2' alt="" />
                             </div>
 
-                            <div className=' bg-[#8eb8e5] shadow rounded-[22px] p-5 relative w-[45%]'>
+                            <div className=' bg-[#8eb8e5] shadow rounded-[22px] p-5 lg:px-5 lg:-py-2 relative w-[45%]'>
                                 <p className=' font-poppins font-bold text-white text-[18px]'>20k+</p>
                                 <p className=' font-poppins font-medium text-[10px] text-white'>Video Courses</p>
                                 <img src={ play } className=' absolute right-3 bottom-2' alt="" />
