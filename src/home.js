@@ -5,6 +5,7 @@ import edu from './edu.png';
 import per from './per.png';
 import ilus from './ilus.png';
 import ilusii from './illus2.png';
+import ilusiii from './illus3.png';
 import courses from './courses.png';
 import go from './go.png';
 import play from './play.png';
@@ -120,7 +121,8 @@ const home = () => {
                             </div>
                         </div>
                         <img src={ ilus } className=' md:hidden -bottom-[4px] right-2 absolute w-[60%] mb-0 pb-0' alt="" />
-                        <img src={ ilusii } className=' hidden md:block -bottom-[6px] right-2 absolute w-[60%] mb-0 pb-0' alt="" />
+                        <img src={ ilusii } className=' hidden md:block lg:hidden -bottom-[6px] right-2 absolute w-[60%] mb-0 pb-0' alt="" />
+                        <img src={ ilusiii } className=' hidden lg:block -bottom-[6px] right-2 absolute mb-0 pb-0 w-[450px]' alt="" />
                     </div>
                 </div>
                 
@@ -136,10 +138,10 @@ const home = () => {
                         </div>
 
                         <div className=' mt-6 flex justify-between'>
-                            <div className='  bg-[#8eb8e5] lg:h-[138px] shadow rounded-[22px] p-5 relative w-[45%]'>
+                            <div className='  bg-[#8eb8e5] shadow rounded-[22px] p-5 relative w-[45%]'>
                                 <p className=' font-sans font-bold text-white text-[18px]'>45k+</p>
                                 <p className=' font-sans font-medium text-[10px] text-white'>Completed Courses</p>
-                                <img src={ courses } className=' mt-5' alt="" />
+                                <img src={ courses } className=' mt-5 w-14' alt="" />
                                 <img src={ go } className=' absolute right-3 bottom-2' alt="" />
                             </div>
 
@@ -154,14 +156,14 @@ const home = () => {
                     <div className=' mt-6 lg:mt-0 lg:w-[30%] lg:h-[350px]'>
                         <span className=' flex justify-between'>
                             <p className='font-sans font-medium text-[20px] text-[#160e4d]'>Popular Courses</p>
-                            <select name="courses" className=' border border-[#160e4d] text-[#160e4d] font-sans font-normal text-[10px] text-center rounded-[20px]' id="">
+                            <select name="courses" className=' border border-[#160e4d] text-[#160e4d] font-sans font-normal text-[10px] items-center text-center rounded-[20px]' id="">
                                 <option value="all">All Courses</option>
                                 <option value="some">Some Courses</option>
                                 <option value="nil">No Courses</option>
                             </select>
                         </span>
 
-                        <div className=' mt-3 w-full bg-[#f1f1f1] shadow py-7  rounded-[15px] flex flex-col space-y-[20px]'>
+                        <div className=' mt-4 w-full bg-[#f1f1f1] shadow py-7 lg:h-[350px] rounded-[15px] flex flex-col space-y-[20px]'>
                             <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#ffcf2d]'></span>
                                 <span className=' flex flex-col font-bold font-sans text-[12px]'>
@@ -205,16 +207,16 @@ const home = () => {
                         </div>
                     </div>
 
-                <div className=' mt-5 lg:mt-0 lg:w-[30%] lg:h-[350px]'>
+                <div className=' mt-5 lg:mt-0 lg:w-[30%]'>
                     <span className=' flex flex-row justify-between'>
                         <p className=' font-sans font-medium text-[18px] text-[#160e4d]'>Best Instructors</p>
                         <p className=' font-sans font-normal text-[14px] underline text-[#160e4d]'>See All</p>
                     </span>
 
-                    <div className=' bg-[#f1f1f1] shadow rounded-[15px] py-5 space-y-[25px]'>
+                    <div className='mt-4 lg:h-[350px] bg-[#f1f1f1] shadow rounded-[15px] py-5 space-y-[25px]'>
                         <div className=' flex justify-between px-5 items-center'>
                             <div className=' flex flex-row items-center justify-between space-x-2'>
-                                <img src={ insi } className='' alt="" />
+                                <img src={ insi } className=' w-14' alt="" />
                                 <span className=' '>
                                     <p className=' font-sans font-medium text-base '>Devon Lane</p>
                                     <p className=' font-sans font-medium text-xs'>5 Design Courses</p>
@@ -224,7 +226,7 @@ const home = () => {
                         </div>
                         <div className=' flex justify-between px-5 items-center'>
                             <div className=' flex flex-row items-center justify-between space-x-2'>
-                                <img src={ insii } className='' alt="" />
+                                <img src={ insii } className=' w-14' alt="" />
                                 <span className=' '>
                                     <p className=' font-sans font-medium text-base '>Albert Flores</p>
                                     <p className=' font-sans font-medium text-xs'>5 Design Courses</p>
@@ -234,7 +236,7 @@ const home = () => {
                         </div>
                         <div className=' flex justify-between px-5 items-center'>
                             <div className=' flex flex-row items-center justify-between space-x-2'>
-                                <img src={ insiii } className='' alt="" />
+                                <img src={ insiii } className=' w-14' alt="" />
                                 <span className=' '>
                                     <p className=' font-sans font-medium text-base '>Jane Cooper</p>
                                     <p className=' font-sans font-medium text-xs'>5 Design Courses</p>
@@ -242,9 +244,10 @@ const home = () => {
                             </div>
                             <button className=' border border-[rgba(22,14,77,0.4)] rounded-[10px] px-3 h-[30px] text-[rgba(0,0,0,0.7)] font-normal text-[10px] font-sans hover:bg-[#2708a0] transition-all hover:text-white'>Courses</button>
                         </div>
+
                         <div className=' flex justify-between px-5 items-center'>
                             <div className=' flex flex-row items-center justify-between space-x-2'>
-                                <img src={ insiv } className='' alt="" />
+                                <img src={ insiv } className=' w-14' alt="" />
                                 <span className=' '>
                                     <p className=' font-sans font-medium text-base '>Cody Fisher</p>
                                     <p className=' font-sans font-medium text-xs'>5 Design Courses</p>
