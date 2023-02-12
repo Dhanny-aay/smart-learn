@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'ptserif': ['"PT Serif"', 'serif'],
+        'poppins': ['"Poppins"', 'sans-serif'],
       },
       backgroundImage: {
         'eli': "url('./Eli.png')",
