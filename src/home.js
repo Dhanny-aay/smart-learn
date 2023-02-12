@@ -134,7 +134,7 @@ const home = () => {
 
                     <div className=' lg:w-[30%] lg:h-[350px]'>
                         <p className=' font-poppins font-medium text-[20px] text-[#160e4d]'>Current Activity</p>
-                        <div className=' w-full rounded-[22px] mt-4 px-5 py-6 bg-[#2708a0] shadow '>
+                        <div className=' w-full rounded-[22px] mt-4 px-5 py-6 lg:py-2  bg-[#2708a0] shadow '>
                             <p className=' text-white font-semibold text-[18px]'>Monthly Progress</p>
                             <p className=' font-poppins font-medium text-white text-[10px]'>These are the latest improvements</p>
                             <Graph />
