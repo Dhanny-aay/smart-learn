@@ -25,7 +25,7 @@ import mail from './mail.png';
 import noti from './noti.png';
 import trate from './trate.png';
 import Graph from './graph';
-
+import { motion } from 'framer-motion';
 
 const home = () => {
     return ( 
@@ -35,7 +35,7 @@ const home = () => {
                     <div className=' flex flex-col items-center '>
                         <span className=' flex flex-row items-center lg:space-x-1'>
                             <img src={ logotab } className=' lg:w-8' alt="" />
-                            <p className=' hidden lg:block font-poppins text-[#160e4d] text-[20px] font-semibold lg:text-[18px]'>Smart Learning</p>
+                            <motion.p animate={{  }} className=' hidden lg:block font-poppins text-[#160e4d] text-[20px] font-semibold lg:text-[18px]'>Smart Learning</motion.p>
                         </span>
                         <span className=' flex flex-col items-center md:mt-14 lg:mt-5 md:space-y-8 lg:space-y-2 lg:items-start'>
                             <button className=' p-3 hover:bg-white hover:rounded-[10px] lg:hover:rounded-[30px] lg:px-5 hover:shadow transition-all flex flex-row items-center lg:space-x-2'>
