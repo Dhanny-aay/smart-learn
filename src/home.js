@@ -25,13 +25,17 @@ import mail from './mail.png';
 import noti from './noti.png';
 import trate from './trate.png';
 import Graph from './graph';
-import { motion } from 'framer-motion';
+import { motion, spring } from 'framer-motion';
 
 const home = () => {
     return ( 
         
         <div className="">
-                <div className='bg-[#f1f1f1] hidden z-50 md:block fixed md:w-[85px] lg:w-[265px] h-full left-0 top-0 px-5 md:pt-14 lg:pt-7'>
+                <motion.div
+                    animate={{ x:0, }}
+                    initial={{ x:-100, }}
+                    transition={{  type: 'spring', stiffness: 50,}}
+                    className='bg-[#f1f1f1] hidden z-50 md:block fixed md:w-[85px] lg:w-[265px] h-full left-0 top-0 px-5 md:pt-14 lg:pt-7'>
                     <div className=' flex flex-col items-center '>
                         <span className=' flex flex-row items-center lg:space-x-1'>
                             <img src={ logotab } className=' lg:w-8' alt="" />
@@ -70,21 +74,29 @@ const home = () => {
                         </div>
                     </div>     
 
-                </div>
-            <div className=" navbar py-6 flex justify-between px-4 md:pr-8 md:ml-[110px]  md:hidden bg-white">
+                </motion.div>
+            <motion.div 
+                    animate={{ y:0, }}
+                    initial={{ y: -250, }}
+                    transition={{  type: 'spring', stiffness: 50, duration:0.2,}}
+                className=" navbar py-6 flex justify-between px-4 md:pr-8 md:ml-[110px]  md:hidden bg-white">
                 <span className=" flex justify-center items-center space-x-1">
                     <img src={ logo } className='' alt="" />
                     <p className=" font-poppins font-semibold text-[20px] text-[#160e4d]">Smart Learning</p>
                 </span>
                 <img src={ menu } className='' alt="" />
-            </div>
+            </motion.div>
 
-            <div className=' mt-4 px-4 flex justify-between items-center md:pr-8 md:ml-[110px] lg:ml-[275px] md:mt-[40px] lg:mt-[20px]'>
+            <motion.div 
+                    animate={{ y:0, }}
+                    initial={{ y: -250, }}
+                    transition={{  type: 'spring', stiffness: 50, duration:0.2,}}
+                className=' mt-4 px-4 flex justify-between items-center md:pr-8 md:ml-[110px] lg:ml-[275px] md:mt-[40px] lg:mt-[20px]'>
                 <input type="search" name="" className=' font-poppins h-[40px] text-[rgba(22,14,77,0.5)] px-5 py-2 bg-[#f1f1f1] rounded-[22px]' placeholder='Search for Query' id="" />
 
                 <span className='hidden md:flex flex-row items-center space-x-8'>
-                    <img src={ mail } className='' alt="" />
-                    <img src={ noti } className='' alt="" />
+                        <img src={ mail } className='' alt="" />
+                        <img src={ noti } className='' alt="" />
                 </span>
 
                 <span className='hidden md:flex flex-row p-3 space-x-2 bg-white rounded-[20px] shadow-md'>
@@ -95,9 +107,13 @@ const home = () => {
                     </span>
                 </span>
 
-            </div>
+            </motion.div>
 
-            <div className=' mt-[30px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] '>
+            <motion.div
+                animate={{ y:0, }}
+                initial={{ y:400, }}
+                transition={{  type: 'spring', stiffness: 50, duration:0.2,}}
+                className=' mt-[30px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] '>
                 <div>
                     <p className=' font-poppins font-medium text-[20px] text-[#160e4d]'>Analytics Overview</p>
                     <div className=' w-full rounded-[22px] md:h-[300px] mt-4 px-5 md:px-11 py-6 md:py-10 bg-[#2708a0] relative flex shadow'>
@@ -128,9 +144,13 @@ const home = () => {
                     </div>
                 </div>
                 
-            </div>
+            </motion.div>
 
-            <div className=' mt-[22px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] lg:flex lg:flex-row justify-between'>
+            <motion.div 
+                animate={{ y:0, }}
+                initial={{ y:400, }}
+                transition={{  type: 'spring', stiffness: 80, duration:0.2,}}
+                className=' mt-[22px] px-5 md:pr-8 md:ml-[110px] lg:ml-[275px] lg:flex lg:flex-row justify-between'>
 
                     <div className=' lg:w-[30%] lg:h-[350px]'>
                         <p className=' font-poppins font-medium text-[20px] text-[#160e4d]'>Current Activity</p>
@@ -166,7 +186,7 @@ const home = () => {
                             </select>
                         </span>
 
-                        <div className=' mt-4 w-full bg-[#f1f1f1] shadow py-7 lg:h-[350px] rounded-[15px] flex flex-col space-y-[20px]'>
+                        <div className=' mt-4 w-full bg-[#8eb8e5] bg-opacity-[0.15] shadow py-7 lg:h-[350px] rounded-[15px] flex flex-col space-y-[20px]'>
                             <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#ffcf2d]'></span>
                                 <span className=' flex flex-col font-bold font-poppins text-[12px]'>
@@ -216,7 +236,7 @@ const home = () => {
                         <p className=' font-poppins font-normal text-[14px] underline text-[#160e4d]'>See All</p>
                     </span>
 
-                    <div className='mt-4 lg:h-[350px] bg-[#f1f1f1] shadow rounded-[15px] py-5 space-y-[25px]'>
+                    <div className='mt-4 lg:h-[350px] bg-[#8eb8e5] bg-opacity-[0.15] shadow rounded-[15px] py-5 space-y-[25px]'>
                         <div className=' flex justify-between px-5 items-center'>
                             <div className=' flex flex-row items-center justify-between space-x-2'>
                                 <img src={ insi } className=' w-14' alt="" />
@@ -263,7 +283,7 @@ const home = () => {
 
                 </div>
 
-            </div>
+            </motion.div>
 
         </div>
      );
