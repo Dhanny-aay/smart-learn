@@ -26,6 +26,7 @@ import noti from './noti.png';
 import trate from './trate.png';
 import Graph from './graph';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const home = () => {
     return ( 
@@ -84,7 +85,9 @@ const home = () => {
                     <img src={ logo } className='' alt="" />
                     <p className=" font-poppins font-semibold text-[20px] text-[#160e4d]">Smart Learning</p>
                 </span>
-                <img src={ menu } className='' alt="" />
+                <Link to='/nav'>
+                    <img src={ menu } className='' alt="" />
+                </Link>
             </motion.div>
 
             <motion.div 
