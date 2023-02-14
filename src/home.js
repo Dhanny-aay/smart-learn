@@ -25,7 +25,7 @@ import mail from './mail.png';
 import noti from './noti.png';
 import trate from './trate.png';
 import Graph from './graph';
-import { motion, spring } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const home = () => {
     return ( 
@@ -187,7 +187,11 @@ const home = () => {
                         </span>
 
                         <div className=' mt-4 w-full bg-[#8eb8e5] bg-opacity-[0.15] shadow py-7 lg:h-[350px] rounded-[15px] flex flex-col space-y-[20px]'>
-                            <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
+                            <motion.div 
+                                whileHover={{
+                                    scale:1.1,
+                                }}
+                                className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#ffcf2d]'></span>
                                 <span className=' flex flex-col font-bold font-poppins text-[12px]'>
                                     <p className=' font-bold font-poppins text-[12px]'>Web Design</p>
@@ -195,9 +199,13 @@ const home = () => {
                                 </span>
                                 <button className=' px-4 py-2 bg-[#ffcf2d] font-poppins font-medium text-xs bg-opacity-20 text-center hover:text-white hover:bg-opacity-100 rounded-[20px] transition-all'>View Course</button>
                                 <img src={ dots } className='' alt="" />
-                            </div>
+                            </motion.div>
 
-                            <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
+                            <motion.div 
+                                whileHover={{
+                                    scale:1.1,
+                                }}
+                                className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#2708a0]'></span>
                                 <span className=' flex flex-col font-bold font-poppins text-[12px]'>
                                     <p className=' font-bold font-poppins text-[12px]'>UI/UX Design</p>
@@ -205,9 +213,13 @@ const home = () => {
                                 </span>
                                 <button className=' px-4 py-2 bg-[#2708a0] font-poppins font-medium text-xs bg-opacity-20 text-center hover:text-white hover:bg-opacity-100 rounded-[20px] transition-all'>View Course</button>
                                 <img src={ dots } className='' alt="" />
-                            </div>
+                            </motion.div>
 
-                            <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
+                            <motion.div 
+                                whileHover={{
+                                    scale:1.1,
+                                }}
+                                className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#fe5244]'></span>
                                 <span className=' flex flex-col font-bold font-poppins text-[12px]'>
                                     <p className=' font-bold font-poppins text-[12px]'>Web Design</p>
@@ -215,9 +227,13 @@ const home = () => {
                                 </span>
                                 <button className=' px-4 py-2 bg-[#fe5244] font-poppins font-medium text-xs bg-opacity-20 text-center hover:text-white hover:bg-opacity-100 rounded-[20px] transition-all'>View Course</button>
                                 <img src={ dots } className='' alt="" />
-                            </div>
+                            </motion.div>
 
-                            <div className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
+                            <motion.div 
+                                whileHover={{
+                                    scale:1.1,
+                                }}
+                                className=' flex items-center justify-between hover:bg-white hover:rounded-[25px] h-[79px] px-3 hover:shadow transition-all delay-200'>
                                 <span className=' h-[40px] w-[40px] rounded-[15px] bg-[#3fb1b5]'></span>
                                 <span className=' flex flex-col font-bold font-poppins text-[12px]'>
                                     <p className=' font-bold font-poppins text-[12px]'>UI/UX Design</p>
@@ -225,7 +241,7 @@ const home = () => {
                                 </span>
                                 <button className=' px-4 py-2 bg-[#3fb1b5] font-poppins font-medium text-xs bg-opacity-20 text-center hover:text-white hover:bg-opacity-100 rounded-[20px] transition-all '>View Course</button>
                                 <img src={ dots } className='' alt="" />
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
